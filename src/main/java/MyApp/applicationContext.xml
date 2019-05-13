@@ -10,13 +10,17 @@
     <bean id="myCoach"
           class="MyApp.TrackCoach">
         <constructor-arg ref="myFortuneService"/>
+
     </bean>
+
 
 <bean id="myCricketCoach"
     class="MyApp.CricketCoach">
-
     <!-- set up setter injection -->
     <property name="fortuneService" ref="myFortuneService"/>
+    <!-- set up literal values -->
+    <!--<property name="emailAddress" value="a@aa.com"/>-->
+    <!--<property name="team" value="ppfpf"/>-->
 </bean>
-    
+
 </beans>

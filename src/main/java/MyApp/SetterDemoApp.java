@@ -15,6 +15,14 @@ public class SetterDemoApp {
         System.out.println(theCoach.getDailyWorkout());
         System.out.println(theCoach.getDailyFortune());
 
+        //setters OK
+      theCoach.setTeam("ku");
+      theCoach.setEmailAddress("123@mail.ru");
+
+        //call our new methods to get literal values
+        System.out.println(theCoach.getEmailAddress());
+        System.out.println(theCoach.getTeam());
+
 
         //close the context
         context.close();

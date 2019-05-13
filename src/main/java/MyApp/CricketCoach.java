@@ -1,7 +1,34 @@
 package MyApp;
 
 public class CricketCoach implements Coach{
+//    public CricketCoach(String emailAddress, String team) {
+//        super();
+//        this.emailAddress = emailAddress;
+//        this.team = team;
+//    }
+
+    //add new fields for emailAddress and team
+    private String emailAddress;
+    private String team;
     private FortuneService fortuneService;
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        System.out.println("CricketCoach: inside setter method-setEmailAddress");
+        this.emailAddress = emailAddress;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        System.out.println("CricketCoach: inside setter method-setTeam");
+        this.team = team;
+    }
 
     //creating a no-arg constructor
     public CricketCoach() {
@@ -21,5 +48,8 @@ public class CricketCoach implements Coach{
     @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();
+    }
+
+    public void setMyCoach() {
     }
 }

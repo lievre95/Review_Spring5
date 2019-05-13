@@ -16,6 +16,5 @@ public class HelloSpringApp {
         System.out.println(theCoach.getDailyFortune());
         //close the context
         context.close();
-        //jopa test GIT
     }
 }

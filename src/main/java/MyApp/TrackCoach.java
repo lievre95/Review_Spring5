@@ -5,9 +5,9 @@ public class TrackCoach implements Coach {
     public TrackCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
-public TrackCoach(){
+    public TrackCoach(){
 
-}
+    }
     @Override
     public String getDailyWorkout(){
 
